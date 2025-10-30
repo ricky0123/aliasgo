@@ -1,19 +1,19 @@
-# Algo: Bash Alias Manager
+# Aliasgo: Bash Alias Manager
 
-Algo allows you to configure multi-level bash aliases through yaml. It reads yaml in from stdin and writes bash source code to stdout.
+Aliasgo allows you to configure multi-level bash aliases through yaml. It reads yaml in from stdin and writes bash source code to stdout.
 
 ## Installation
 
 ```sh
-go install github.com/ricky0123/algo@latest
+go install github.com/ricky0123/aliasgo@latest
 ```
 
 ## Example usage
 
-Create a file `~/.algo.aliases.yml` with the following contents
+Create a file `~/.aliasgo.aliases.yml` with the following contents
 
 ```yml
-# ~/.algo.aliases.yml
+# ~/.aliasgo.aliases.yml
 
 cm: chemzoi
 
@@ -23,4 +23,4 @@ g:
   q: commit -am "$(date)" && git push
 ```
 
-Then run `cat ~/.algo.aliases.yml | algo > ~/.algo.aliases.sh` and add `source $HOME/.algo.aliases.sh` to your `~/.bashrc`.
+Then run `cat ~/.aliasgo.aliases.yml | aliasgo > ~/.aliasgo.aliases.bash` and add `source $HOME/.aliasgo.aliases.bash` to your `~/.bashrc`.
