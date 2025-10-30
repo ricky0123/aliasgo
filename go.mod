@@ -1,4 +1,4 @@
-module github.com/ricky0123/algo
+module github.com/ricky0123/aliasgo
 
 go 1.18
 

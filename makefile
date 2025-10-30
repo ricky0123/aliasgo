@@ -5,5 +5,5 @@ build:
 	go build -o build/
 
 install:
-	cp build/algo ~/.local/bin
+	cp build/aliasgo ~/.local/bin
 
