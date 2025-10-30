@@ -18,18 +18,9 @@ Create a file `~/.algo.aliases.yml` with the following contents
 cm: chemzoi
 
 g:
-    $: git
-    s: status
-    q: commit -am "$(date)" && git push
+  $: git
+  s: status
+  q: commit -am "$(date)" && git push
 ```
 
-Then add this line to your `~/.bashrc`:
-
-```bash
-# ~/.bashrc
-
-if [ -f ~/.algo.aliases.yml ] && command -v algo &>/dev/null
-then
-    source <(cat ~/.algo.aliases.yml | algo) &> /dev/null
-fi
-```
+Then run `cat ~/.algo.aliases.yml | algo > ~/.algo.aliases.sh` and add `source $HOME/.algo.aliases.sh` to your `~/.bashrc`.
