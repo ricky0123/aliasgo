@@ -1,9 +1,16 @@
 name: aliasgo
+title: aliasgo
+license: Apache-2.0
 base: core24
 adopt-info: aliasgo
 summary: Configure multi-level bash aliases through yaml.
 description: |
   Aliasgo allows you to configure multi-level bash aliases through yaml. It reads yaml in from stdin and writes bash source code to stdout.
+website: https://github.com/ricky0123/aliasgo
+source-code: https://github.com/ricky0123/aliasgo
+donation: https://github.com/sponsors/ricky0123
+issues: https://github.com/ricky0123/aliasgo/issues
+contact: rickycontact9@gmail.com
 
 grade: stable
 confinement: strict
