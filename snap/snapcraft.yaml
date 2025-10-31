@@ -1,12 +1,16 @@
 name: aliasgo
 base: core24
-version: "0.1"
-summary: Aliasgo is a tool that allows you to configure multi-level bash aliases through yaml.
+adopt-info: aliasgo
+summary: Configure multi-level bash aliases through yaml.
 description: |
   Aliasgo allows you to configure multi-level bash aliases through yaml. It reads yaml in from stdin and writes bash source code to stdout.
 
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs and slots
+grade: stable
+confinement: strict
+
+apps:
+  aliasgo:
+    command: bin/aliasgo
 
 parts:
   aliasgo:
