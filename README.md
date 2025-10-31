@@ -1,8 +1,18 @@
 # Aliasgo: Bash Alias Manager
 
+<a href="https://snapcraft.io/aliasgo"><img src="https://snapcraft.io/aliasgo/badge.svg" alt="Snap Status"></a>
+
 Aliasgo allows you to configure multi-level bash aliases through yaml. It reads yaml in from stdin and writes bash source code to stdout.
 
 ## Installation
+
+Install with Snap
+
+```sh
+snap install aliasgo
+```
+
+or install with go
 
 ```sh
 go install github.com/ricky0123/aliasgo@latest
